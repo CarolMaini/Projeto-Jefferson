@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Perguntas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono:wght@100;500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="index.js">
+</head>
+
+
+<header class="cabecalho">
+    <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
+    <img src="/img/Logo Jogo da Bíblia Vetor.png" alt="Logotipo" class="cabecalho__logo">    
+</header>
+<nav class="menu-lateral">
+    <img src="/img/texte.png" alt="Logotipo" class="menu-lateral__logo">
+    <a href="#" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Início</a>
+    <a href="#" class="menu-lateral__link menu-lateral__link--videos">Vídeos</a>
+    <a href="#" class="menu-lateral__link menu-lateral__link--picos">Picos</a>
+    <a href="#" class="menu-lateral__link menu-lateral__link--integrantes">Integrantes</a>
+    <a href="#" class="menu-lateral__link menu-lateral__link--camisas">Camisas</a>
+    <a href="#" class="menu-lateral__link menu-lateral__link--pinturas">Pinturas</a>
+    
+</nav>
+
+<form>
+    <h1 class="titulo__padrao">Minhas Perguntas</h1>
+    <div class="caixa__texto">
+        <label for="mensagem"></label>
+        <textarea cols="40" rows="10" id="mensagem" placeholder="Qual a cor dos olhos castanhos? 
+        R: Olhos castanhos são feiotos da mais castanha cor castanha que não é verde nem azul. 
+        Tipo: Multipla escolha. " class="caixa-pergunta__resposta"></textarea required>
+
+        <label for="mensagem"></label>
+        <textarea cols="40" rows="10" id="mensagem" class="caixa-pergunta__resposta"></textarea required>
+        </div>
+    </form>
+
+</body>
+<script src="index.js"></script>
+</html>
