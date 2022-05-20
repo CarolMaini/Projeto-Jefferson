@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Pergunta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono:wght@100;500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="adicionar-pergunta.html">
+</head>
+
+<header class="cabecalho">
+    <button class="cabecalho__menu" aria-label="Menu"><i><img src="/img/Sandubar.png" alt=""></i></button>
+    <img src="img/texte.png" alt="Logotipo" class="cabecalho__logo">
+</header>
+<nav class="menu-lateral">
+
+    <a href="#" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo"></a>
+    <a href="adicionar-pergunta.html" class="menu-lateral__link menu-lateral__link--videos">Adicionar Perguntas</a>
+    <a href="minhas-perguntas.html" class="menu-lateral__link menu-lateral__link--picos">Minhas Perguntas</a>
+    <a href="ranking.html" class="menu-lateral__link menu-lateral__link--integrantes">Ranking</a>
+    <a href="redefinir.html" class="menu-lateral__link menu-lateral__link--camisas">Redefinir Senha</a>
+    <a href="sair" class="menu-lateral__link menu-lateral__link--pinturas">Sair</a>
+
+</nav>
+
+<article class="adc__pergunta">
+    <h1>Adicionar Pergunta</h1>
+
+    <section class="selecao__tema">
+        <legend class="desc__cadastrar">Para começar a colaborar cadastre-se com seus dados abaixo e comece a enviar
+            perguntas.</legend>
+        <select class="selecionar__tema">
+            <option>#</option>
+            <option>#</option>
+            <option>#</option>
+        </select>
+    </section>
+
+
+
+
+
+
+    <section class="pergunta__card">
+        <div class="card__responda">
+            <legend class="card__pergunta"></legend>
+        </div>
+    </section>
+
+    <section class="card__multipla--escolha">
+        <h2 class="escolha__resposta">Resposta</h2>
+        <label for="radio-escolha"><input type="radio" name="escolha" value="#" id="radio-escolha">Múltipla
+            Escolha</label>
+
+        <label for="radio-completa"><input type="radio" name="escolha" value="#" id="radio-completa">Refêrencia
+            Completa</label>
+
+        <label for="radio-livro-capitulo"><input type="radio" name="escolha" value="#" id="radio-livro-capitulo"
+                checked>Referência Livro-Capítulo</label>
+
+        <label for="radio-simples"><input type="radio" name="escolha" value="#" id="radio-simples" checked>Resposta
+            simples</label>
+    </section>
+
+
+
+
+
+
+
+    <section class="adc__alternativa">
+        
+        <div class="card__alternativa">
+            <legend class="card__pergunta card__altenar"></legend>
+            <button class="adicionar__alternativa">Adicionar Alternativa</button>
+
+            <div class="secao__alt">
+                <form class="escolha__alt">
+                    <p class="pargunta__alternativa"></p>
+                    
+                    <label for="radio-escolha"><input type="radio" name="escolha" value="#" id="radio-escolha">Múltipla
+                        Escolha</label>
+                    <img src="" alt="" class="excluir__alt">
+                </form>
+                <form class="escolha__alt">
+                    <p class="pargunta__alternativa"></p>
+                    
+                    <label for="radio-completa"><input type="radio" name="escolha" value="#" id="radio-completa">Refêrencia
+                        Completa</label>
+                    <img src="" alt="" class="excluir__alt">
+                </form>
+                <form class="escolha__alt">
+                    <p class="pargunta__alternativa"></p>
+                    
+                    <label for="radio-livro-capitulo"><input type="radio" name="escolha" value="#" id="radio-livro-capitulo"
+                        >Referência Livro-Capítulo</label>
+                    <img src="" alt="" class="excluir__alt">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+           <section class="part__referencia">
+                <h2>Referência</h2>
+
+                <Legend class="card__referencia"><input type="radio" name="escolha" value="#" id="radio-livro-capitulo">Biblía</legend>
+
+                <Legend class="card__referencia"><input type="radio" name="escolha" value="#" id="radio-livro-capitulo">Textual (livros históricos)</legend>
+
+                    <p class="art__referencia"> Penguntas sobre a história da Igreja ou da Biblía devem ter referência de onde foi extraído segundo o método de referência de Vancouver.</p>
+
+
+                    <select class="selecionar__referencia">
+                        <option>livro</option>
+                        <option>#</option>
+                        <option>#</option>
+                    </select>
+
+                    <select class="selecionar__referencia">
+                        <option>capitulo</option>
+                        <option>#</option>
+                        <option>#</option>
+                    </select>
+
+
+                    <select class="sselecionar__referencia">
+                        <option>versiculo</option>
+                        <option>#</option>
+                        <option>#</option>
+                    </select>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Corporis, dolorum impedit exercitationem error autem, nisi architecto illo laudantium 
+                        modi magni sint asperiores labore nesciunt nobis! Ex o
+                        mnis totam consectetur accusantium?</p>
+           </section>    
+    
+           <div class="">
+            <button class="btn__pg--adicionar"><a href="#" class="link__entrar">Entrar</a></button>
+        </div>
+
+</article>
+
+</body>
+<script src="index.js"></script>
+
+</html>

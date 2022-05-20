@@ -1,6 +1,4 @@
-
-
-@media screen and (min-width: auto) {
+@media screen and (min-width: 320px) {
     body {
         background: #F4F5F6;
         width: 320px;
@@ -8,7 +6,7 @@
     }
 
     @font-face {
-        font-family:'icones';
+        font-family: 'icones';
         src: url(icones.ttf);
     }
 
@@ -182,30 +180,40 @@
 
     .cabecalho {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #3578aa;
-        padding: 8px, 16px;
-        box-shadow: 0px 4px 4px rgba(158, 152, 152, 0.16);
+        justify-content: flex-start;
+        padding: 0px 16px;
+        background: #F4F5F6;
+
     }
 
     .cabecalho__menu i::after {
-        content: "\e904";
-        font-size: 24px;
+        text-decoration: none;
     }
 
 
-    .cabecalho__logo {
-        width: 100px;
+    img.cabecalho__logo {
+        display: flex;
+        justify-content: center;
+        margin: 0px 28px;
+        display: flex;
+        align-items: center;
+        height: 56px;
+        width: 160px;
+
+
     }
 
     .menu-lateral {
         display: flex;
         flex-direction: column;
-        background-color: #15191C;
-        width: 75vw;
+        background: #F4F5F6;
+        width: 100vw;
         height: 100vh;
-
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 12px;
         position: absolute;
         left: -100vw;
         transition: .75s;
@@ -225,17 +233,19 @@
     }
 
     .menu-lateral__link {
-        height: 64px;
-        color: #95999C;
-        padding-left: 64px;
+        height: 42px;
+        color: #9E9D97;
+        padding-left: 32px;
         display: flex;
         align-items: center;
+
+
     }
 
     .menu-lateral__link--ativo {
-        color: #FFFFFF;
+        color: #494949;
         padding-left: 56px;
-        border-left: 8px solid #FFFFFF;
+
     }
 
     .menu-lateral__link::before {
@@ -275,5 +285,75 @@
         content: "";
     }
 
+    .pergunta__texto {
+        display: grid;
+        grid-area: 1fr auto;
+        column-gap: 1fr 1fr;
+        grid-auto-rows: 1, 1;
+    }
 
+    .caixa__texto  {
+      margin: 20px;
+    }
+
+    .caixa-pergunta__resposta {
+        display: block;
+        
+        height: 140px;
+        width: 274px;
+        left: 24px;
+        top: 155px;
+        
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 400;
+        background-color:#F4F5F6;
+        padding-top: 10px;
+        border: 1px solid rgba(114, 115, 118, 1);
+        border-radius: 5px;
+    }
+
+    .txt__pergunta {
+          
+    }
+
+
+    .btn__conf {
+        display: flex;
+        padding-left: 15px;
+        font-family: Lato;
+        margin-top: -15%;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: left;
+        
+
+        
+    }
+
+    .btn__enviado {
+        display: grid;
+        text-align: center;
+        align-items: center;
+        height: 24px;        
+        width: 70px;
+        left: 34px;        
+        border-radius: 10px;
+        background: rgba(255, 206, 91, 1);
+    }
+
+    .btn__revisado {
+        display: grid;
+        text-align: center;
+        align-items: center;
+        height: 24px;        
+        width: 70px;
+        left: 34px;        
+        border-radius: 10px;
+        background: #5AD83A;
+    }
+
+   
 }
