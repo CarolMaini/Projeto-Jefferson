@@ -21,7 +21,8 @@
 
 
 <header class="cabecalho">
-    <button class="cabecalho__menu" aria-label="Menu"><i><img src="/img/Sandubar.png" alt=""></i></button>
+    <button class="cabecalho__menu" aria-label="Menu"><i><img src="/img/Sandubar.png" alt=""
+                class="barra__menu"></i></button>
     <img src="img/texte.png" alt="Logotipo" class="cabecalho__logo">
 </header>
 <nav class="menu-lateral">
@@ -36,22 +37,23 @@
 
 
 
-<article class="pergunta__texto">   
- <h1 class="titulo__padrao">Minhas Perguntas</h1>
-    <div class="pergunta__texto">
-        
+<article class="pergunta__texto">
+    <h1 class="titulo__padrao">Minhas Perguntas</h1>
+    <div class="pergunta__texto--caixa">
+
         <div class="caixa__texto">
             <div class="txt__pergunta"><textarea cols="230" rows="5" id="mensagem" placeholder="Qual a cor dos olhos castanhos?
 R: Olhos castanhos são feiotos da mais castanha cor castanha que não é verde nem azul. 
-Tipo: Multipla escolha. " class="caixa-pergunta__resposta"></textarea required></div>
-            <label class="btn__conf"><p class="btn__enviado">Enviado</p></label>
+Tipo: Multipla escolha. " class="caixa-pergunta__resposta"></textarea required><label class="configuracao__botao btn__conf">
+    <p class="btn__enviado">Enviado</p></label></div>            
         </div>
 
         <div class="caixa__texto">
             <div class="txt__pergunta"><textarea cols="230" rows="5" id="mensagem" placeholder="Dois olhos uma boca e um...?
 R: Nariz. 
-Tipo: Complete. " class="caixa-pergunta__resposta"></textarea required></div>            
-            <label class="btn__conf"><p class="btn__revisado">Revisado</p></label>
+Tipo: Complete. "class="caixa-pergunta__resposta"></textarea required><label class="configuracao__botao btn__conf">
+    <p class="btn__revisado">Revisado</p></label></div>           
+            
         </div>
     </div>
 </article>
@@ -60,5 +62,3 @@ Tipo: Complete. " class="caixa-pergunta__resposta"></textarea required></div>
 <script src="index.js"></script>
 
 </html>
-
-
